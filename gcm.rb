@@ -5,21 +5,21 @@
 class Gcm < Formula
   desc "Git Category Manager — organize branches without renaming them"
   homepage "https://github.com/SanghaviSiddhesh21/gcm"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.6/gcm_0.1.6_darwin_amd64.tar.gz"
-      sha256 "d02ca54002d50a5fb6889bf068a9c4d79bb45efd9276f4508ab72992e6810726"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.7/gcm_0.1.7_darwin_amd64.tar.gz"
+      sha256 "64bd2a284192f203f7a3f6018b8970a70f94178181292ec292dbb0664b5e517c"
 
       def install
         bin.install "gcm"
       end
     end
     on_arm do
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.6/gcm_0.1.6_darwin_arm64.tar.gz"
-      sha256 "94f9ff4f33304b94c72f314ddc22bac589b4fc400c54b976965ee2b9785c73ce"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.7/gcm_0.1.7_darwin_arm64.tar.gz"
+      sha256 "e7bbb5e3e8f489b24d3eb678eae068a1e9fd55951f916e2bb9b6eed35733a273"
 
       def install
         bin.install "gcm"
@@ -30,8 +30,8 @@ class Gcm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.6/gcm_0.1.6_linux_amd64.tar.gz"
-        sha256 "319d018243bc317d1da30653fbc7dc9bae9b9986d002e732d8a41cf830dde020"
+        url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.7/gcm_0.1.7_linux_amd64.tar.gz"
+        sha256 "11e5ea9d0438b81b5f92db7789a607067c2486e2471ac0d5b7776d2a7d7e8614"
 
         def install
           bin.install "gcm"
@@ -40,8 +40,8 @@ class Gcm < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.6/gcm_0.1.6_linux_arm64.tar.gz"
-        sha256 "565d646cceb96f951b1823ae3a78791c98eae6bcc2c75fb90d5afc5c011aa203"
+        url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.7/gcm_0.1.7_linux_arm64.tar.gz"
+        sha256 "24c759a922d0a551b73a6d2c3a1d83fcb31fa8b434fa2d92744a9db6a5b2dda7"
 
         def install
           bin.install "gcm"
