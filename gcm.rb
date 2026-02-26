@@ -5,21 +5,21 @@
 class Gcm < Formula
   desc "Git Category Manager — organize branches without renaming them"
   homepage "https://github.com/SanghaviSiddhesh21/gcm"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.9/gcm_0.1.9_darwin_amd64.tar.gz"
-      sha256 "ea493eb1de9f44c5d3b644b6dd240e9a2cabe63213f48571310d7ffcf8eda1e1"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.10/gcm_0.1.10_darwin_amd64.tar.gz"
+      sha256 "f4ada02ee3b7ba5a41354836e8159a1248a5a429fed023d04c9581db8c57453a"
 
       define_method(:install) do
         bin.install "gcm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.9/gcm_0.1.9_darwin_arm64.tar.gz"
-      sha256 "ebecb2d099be4fdb367e7dde6cade2b1f6b4ed27e70cb2a6e14ac2f0fb6dc003"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.10/gcm_0.1.10_darwin_arm64.tar.gz"
+      sha256 "e7d45ecdb70cd252c466e1aa23aebbdb29f8b1c5a11d68a682f527b69f50b947"
 
       define_method(:install) do
         bin.install "gcm"
@@ -29,15 +29,15 @@ class Gcm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.9/gcm_0.1.9_linux_amd64.tar.gz"
-      sha256 "d852d62f53f80150ca2981ab5ed7a28ddae7c09ef35bcad74d9ef5798e4d99b7"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.10/gcm_0.1.10_linux_amd64.tar.gz"
+      sha256 "93296499b71e5805d4dd1893ef85c984169ee4af4f83871e0280afbde0052a24"
       define_method(:install) do
         bin.install "gcm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.9/gcm_0.1.9_linux_arm64.tar.gz"
-      sha256 "07d8ca241c6644a1d6e8843a518e219621edb45e20aad6817034950dc582b3b0"
+      url "https://github.com/SanghaviSiddhesh21/gcm/releases/download/v0.1.10/gcm_0.1.10_linux_arm64.tar.gz"
+      sha256 "4102e2c52f2a5be9a72d7f2e7268c8b9211145c05214fc92619179ff99990199"
       define_method(:install) do
         bin.install "gcm"
       end
